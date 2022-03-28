@@ -9,13 +9,43 @@ import UIRoute from '@/pages/admin/ui/route'
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/:catchAll(.*)",
-    redirect: { name: 'dashboard' },
+    redirect: { name: 'profile' },
   },
   {
     name: 'admin',
     path: '/admin',
     component: AppLayout,
     children: [
+      {
+        name: 'profile',
+        path: 'profile',
+        component: () => import('@/pages/admin/profile/Profile.vue'),
+      },
+      {
+        name: 'projects',
+        path: 'projects',
+        component: () => import('@/pages/admin/projects/Projects.vue'),
+      },
+      {
+        name: 'project',
+        path: 'project',
+        component: () => import('@/pages/admin/projects/Project.vue'),
+      },
+      {
+        name: 'messages',
+        path: 'messages',
+        component: () => import('@/pages/admin/dashboard/Dashboard.vue'),
+      },
+      {
+        name: 'assists',
+        path: 'assists',
+        component: () => import('@/pages/admin/dashboard/Dashboard.vue'),
+      },
+      {
+        name: 'sign-out',
+        path: 'sign-out',
+        redirect: { name: 'login' },
+      },
       {
         name: 'dashboard',
         path: 'dashboard',

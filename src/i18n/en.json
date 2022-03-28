@@ -333,7 +333,12 @@
     "line-maps": "Line Maps",
     "login-singup": "Login/Signup",
     "404-pages": "404 Pages",
-    "faq": "Faq"
+    "faq": "Faq",
+    "profile": "Profile",
+    "project": "Project",
+    "messages": "Messages",
+    "assists": "Assists",
+    "sign-out": "Sign Out"
   },
   "messages": {
     "all": "See all messages",
