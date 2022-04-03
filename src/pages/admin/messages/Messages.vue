@@ -1,44 +1,44 @@
 <template>
-    <div class="messages">
-        <div class="messages__inner">
-            <div class="messages__header">
-                <div class="messages-controls">
-                    <va-icon name="fa-square-o"  class="messages-controls__icon" size="20px"/>
-                    <va-icon name="archive" class="messages-controls__icon" size="20px"/>
-                    <va-icon name="fa-trash"  class="messages-controls__icon" size="20px"/>
-                </div>
-            </div>
-            <div class="messages__body">
-                <aside class="messages__aside">
-                    <va-list class="messages__list">
-                        <template v-for="(customer, i) in customers" 
-                                :key="'item' + customer.id"
-                        >
-                        <va-list-item clickable @click="notify(customer.name)" class="messages__list-item">
-                            <va-list-item-section class="ml-2" avatar>
-                                <va-avatar>
-                                    <img :src="customer.picture" :alt="customer.name">
-                                </va-avatar>
-                                </va-list-item-section>
-                                <va-list-item-section>
-                                    <va-list-item-label>
-                                        {{ customer.name }}
-                                    </va-list-item-label>
-                                    <va-list-item-label caption>
-                                        {{ customer.address }}
-                                </va-list-item-label>
-                            </va-list-item-section>
-                        </va-list-item>
-                        <va-list-separator v-if="i < customers.length - 1" :key="'separator' + customer.id" />
-                        </template>
-                    </va-list>
-                </aside>
-                <div class="messages__content">
-                    mail box
-                </div>
-            </div>
+  <div class="messages">
+    <div class="messages__inner">
+      <div class="messages__header">
+        <div class="messages-controls">
+          <va-icon name="fa-square-o"  class="messages-controls__icon" size="20px"/>
+          <va-icon name="archive" class="messages-controls__icon" size="20px"/>
+          <va-icon name="fa-trash"  class="messages-controls__icon" size="20px"/>
         </div>
+      </div>
+      <div class="messages__body">
+        <aside class="messages__aside">
+          <va-list class="messages__list">
+            <template v-for="(customer, i) in customers" 
+              :key="'item' + customer.id"
+            >
+              <va-list-item clickable @click="notify(customer.name)" class="messages__list-item">
+                <va-list-item-section class="ml-2" avatar>
+                  <va-avatar>
+                    <img :src="customer.picture" :alt="customer.name">
+                  </va-avatar>
+                </va-list-item-section>
+                <va-list-item-section>
+                  <va-list-item-label>
+                    {{ customer.name }}
+                  </va-list-item-label>
+                  <va-list-item-label caption>
+                    {{ customer.address }}
+                  </va-list-item-label>
+                </va-list-item-section>
+              </va-list-item>
+              <va-list-separator v-if="i < customers.length - 1" :key="'separator' + customer.id" />
+            </template>
+          </va-list>
+        </aside>
+        <div class="messages__content">
+          mail box
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
