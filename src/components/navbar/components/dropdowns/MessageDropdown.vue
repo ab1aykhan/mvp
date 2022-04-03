@@ -32,7 +32,7 @@
 
 <script>
 import VaIconMessage from '@/components/icons/VaIconMessage'
-import { useGlobalConfig } from 'vuestic-ui'
+// import { useGlobalConfig } from 'vuestic-ui'
 
 export default {
   name: 'message-dropdown',

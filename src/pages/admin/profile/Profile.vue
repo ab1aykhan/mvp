@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <div class="xs12 mb-5 px-auto">
-            <ProfileUserCard />
-        </div>
-        <div class="xs12">
-            <ProfileInfoCard />
-        </div>
+  <div>
+    <div class="xs12 mb-5 px-auto">
+      <ProfileUserCard />
     </div>
+    <div class="xs12">
+      <ProfileInfoCard />
+    </div>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'

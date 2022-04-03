@@ -1,30 +1,30 @@
 <template>
-<div class="page projects-page">
+  <div class="page projects-page">
     <div class="page__inner">
-        <div class="page__header">
-            <h3 class="projects-page__title">Projects</h3>
-            <div class="projects-page__actions mt-3 pa-2">
-                <div class="projects-page__views">
-                    <va-icon name="glyphicon glyphicon-align-justify" size="20px" class="ma-1"/>
-                    <va-icon name="glyphicon glyphicon-th-large" size="20px" class="ma-1"/>
-                </div>
-                <div class="projects-page__searchbox">
-                    <va-input
-                        placeholder="Search"
-                    />
-                </div>
-                <div class="projects-page__filter"></div>
-            </div>
+      <div class="page__header">
+        <h3 class="projects-page__title">Projects</h3>
+        <div class="projects-page__actions mt-3 pa-2">
+          <div class="projects-page__views">
+            <va-icon name="glyphicon glyphicon-align-justify" c class="ma-1"/>
+            <va-icon name="glyphicon glyphicon-th-large" size="20px" class="ma-1"/>
+          </div>
+          <div class="projects-page__searchbox">
+            <va-input
+              placeholder="Search"
+            />
+          </div>
+          <div class="projects-page__filter"></div>
         </div>
-        <div class="page__body projects-page__body">
-            <ProjectsCard class="projects-page__card" @click="go"/>
-            <ProjectsCard class="projects-page__card"/>
-            <ProjectsCard class="projects-page__card"/>
-            <ProjectsCard class="projects-page__card"/>
-            <ProjectsCard class="projects-page__card"/>
-        </div>
+      </div>
+      <div class="page__body projects-page__body">
+        <ProjectsCard class="projects-page__card" @click="go"/>
+        <ProjectsCard class="projects-page__card"/>
+        <ProjectsCard class="projects-page__card"/>
+        <ProjectsCard class="projects-page__card"/>
+        <ProjectsCard class="projects-page__card"/>
+      </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>

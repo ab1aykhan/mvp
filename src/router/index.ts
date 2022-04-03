@@ -34,7 +34,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         name: 'messages',
         path: 'messages',
-        component: () => import('@/pages/admin/dashboard/Dashboard.vue'),
+        component: () => import('@/pages/admin/messages/Messages.vue'),
       },
       {
         name: 'assists',
